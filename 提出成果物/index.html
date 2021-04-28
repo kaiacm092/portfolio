@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+    	<link rel="stylesheet" href="css/style.css" />
+    	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    	<script src="./js/vendor/jquery-1.10.2.min.js"></script>
+		<script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="./js/main.js"></script>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<header>
+				<div class="header-content">
+					<div class="float-left">
+						<img src="images/logo-saba.png" alt="logo">
+					</div>
+					<div class="float-left">
+						<h1>夜明け食堂 ~さばみそ~</h1>
+					</div>
+				</div>
+			</header>
+
+			<div id="content">
+				<ul class="procedure">
+					<li class="choice">コース選択</li>
+					<li class="gray">予約手続き</li>
+        			<li class="light_gray">予約完了</li>
+				</ul>
+				<div id="images">
+					<div class="clearfix">
+				        <p>
+				          <img src="images/teppan.jpg" alt="てっぱん焼き">
+				          <strong>特選てっぱん焼きコース<br>¥3,500</strong><span></span>
+				        </p>
+				        <p>
+				          <img src="images/seafood.jpg" alt="山の幸">
+				          <strong>海の幸グリルコース<br>¥2,800</strong><span></span>
+				        </p>
+				        <p>
+				          <img src="images/mountainfood.jpg" alt="海の幸">
+				          <strong>山の幸グルメコース<br>¥2,900</strong><span></span>
+				        </p>
+				        <p>
+				          <img src="images/garlicrice.jpg" alt="ガーリックライス">
+				          <strong>ガーリックライスコース<br>¥1,800</strong><span></span>
+				        </p>
+			    	</div>
+			    </div>
+
+		        <form action="confirm.php">
+		        	<ul class="select">
+		        		<li class="horizontally">
+		        			<label>コース</label><br>
+		        			<span>
+		        			<select name="course">
+					            <option value="101">特選てっぱん焼きコース</option>
+					            <option value="102">海の幸グリルコース</option>
+					            <option value="103">山の幸グルメコース</option>
+					            <option value="104">ガーリックライスコース</option>
+				            </select>
+				        	</span>
+		        		</li>
+						<li class="horizontally">
+				            <label>人数</label><br>
+				            <select name="number_of_customers">
+				                <option value="1">1名</option>
+				                <option value="2" selected>2名</option>
+				                <option value="3">3名</option>
+				                <option value="4">4名</option>
+				                <option value="5">5名</option>
+				                <option value="6">6名</option>
+				                <option value="7">7名</option>
+				                <option value="8">8名</option>
+				            </select>
+				        </li>
+				        <li>
+				            <input type="submit" class="submit" value="次へ進む">
+				        </li>
+		        	</ul>
+		        </form>
+			</div>
+		</div>
+	</body>
+</html>
